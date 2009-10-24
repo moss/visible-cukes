@@ -1,0 +1,41 @@
+= Visible Cukes
+
+== Visible what now?
+
+It's an alternative formatter for Cucumber, your favorite functional testing and specification tool. It makes an HTML document of all your features. You could already do that with the built in HTML formatter, though.
+
+*Here's the cool part*: If you're using {Webrat}[http://gitrdoc.com/brynary/webrat/tree/master/] in your testing, it will save a copy of the current page after each step. In the HTML for the features, it links all the steps to their corresponding screenshots. So you can always get a quick picture of what the description in the feature is actually talking about.
+
+== How do I use it?
+
+To install: <tt>gem install visible-cukes</tt>. It's hosted on {Gemcutter}[http://gemcutter.org/], so you'll need to set that up first, if you haven't already: <tt>gem install gemcutter</tt> and then <tt>gem tumble</tt>. 
+
+To use: 
+* <tt>mkdir visible-cukes</tt> (This is where your html will live.)
+* <tt>cucumber -f VisibleCukes -out visible-cukes/index.html</tt>
+
+== Is it finished?
+
+Well... not really. You can totally use it, but there are a few weaknesses it's worth knowing about:
+* The core of it isn't really tested. It was a burst of an hour or two of
+  furious hacking, so I still need to go back and clean it up.
+* When filling out forms, not all changes will be reflected in the
+  captured screenshots. Filling in text fields and selecting items from
+  dropdown lists work, because those are what I've needed so far, but no
+  other form elements do.
+* You can't control where the generated docs go, which is a pity.
+* The captured screenshot pages won't link to your stylesheets correctly.
+* I'd love it if the HTML looked better than it does.
+
+That's the stuff I'm planning to change over the next couple weeks or so, but I wanted to get something out early and see if other people would find it useful.
+
+== Is there anyone you totally ripped off this idea from?
+
+I would never have started doing this if I hadn't seen a demo of Ward Cunningham's {ridiculously awesome testing and exploration system for the Eclipse MyFoundation portal}[http://c2.com/~ward/portal-blog/]. That, in turn, is inspired by Brian Marick's idea of {Visible Workings}[http://www.visibleworkings.com/]. I hope that Visible Cukes may someday be good enough to live up to this lineage.
+
+== Who are you, and how can I contact you?
+
+* I'm Moss Collum. Hi!
+* moss dot collum on gmail
+* http://twitter.com/moss
+* http://www.m14m.net/bloglet.php
