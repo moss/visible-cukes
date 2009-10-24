@@ -3,6 +3,9 @@ require 'webrat_extensions'
 class VisibleCukes < Cucumber::Formatter::Html
   def initialize(step_mother, io, options)
     super(step_mother, io, options)
+    raise "You must specify --out FILE for visible-cukes" unless File === io
+
+    FileUtils.makedirs('./visible-cukes/pages')
 
     @rb = step_mother.load_programming_language('rb')
   end
@@ -15,7 +18,7 @@ class VisibleCukes < Cucumber::Formatter::Html
 
   def visit_step(step)
     @step_id = step.dom_id
-    html_filename = "feature_pages/#{@current_page_name_prefix}_#{@current_page_name_count}.html"
+    html_filename = "pages/#{@current_page_name_prefix}_#{@current_page_name_count}.html"
     @current_page_name_count += 1
     @builder.a(:href => html_filename) do
       super
@@ -26,7 +29,7 @@ class VisibleCukes < Cucumber::Formatter::Html
   private
 
   def save_file html_filename
-    full_path = File.expand_path("./doc/#{html_filename}")
+    full_path = File.expand_path("./visible-cukes/#{html_filename}")
     unless has_response?
       File.open(full_path, 'w') do |f|
         f.write(current_page)
