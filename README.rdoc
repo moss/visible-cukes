@@ -33,6 +33,12 @@ That's the stuff I'm planning to change over the next couple weeks or so, but I 
 
 I would never have started doing this if I hadn't seen a demo of Ward Cunningham's {ridiculously awesome testing and exploration system for the Eclipse MyFoundation portal}[http://c2.com/~ward/portal-blog/]. That, in turn, is inspired by Brian Marick's idea of {Visible Workings}[http://www.visibleworkings.com/]. I hope that Visible Cukes may someday be good enough to live up to this lineage.
 
+Also, some of the testing code for custom Webrat extensions is basically lifted from Webrat's own rspec suite. Hope that's okay.
+
+== License
+
+Free, some more specific open source license to be posted later. If it breaks, you can keep both pieces.
+
 == Who are you, and how can I contact you?
 
 * I'm Moss Collum. Hi!
