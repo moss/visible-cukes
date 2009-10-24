@@ -2,7 +2,7 @@
 
 == Visible what now?
 
-It's an alternative formatter for Cucumber, your favorite functional testing and specification tool. It makes an HTML document of all your features. You could already do that with the built in HTML formatter, though.
+It's an alternative formatter for {Cucumber}[http://cukes.info/], your favorite functional testing and specification tool. It makes an HTML document of all your features. You could already do that with the built in HTML formatter, though.
 
 <b>Here's the cool part</b>: If you're using {Webrat}[http://gitrdoc.com/brynary/webrat/tree/master/] in your testing, it will save a copy of the current page after each step. In the HTML for the features, it links all the steps to their corresponding screenshots. So you can always get a quick picture of what the description in the feature is actually talking about.
 
