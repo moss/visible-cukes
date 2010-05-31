@@ -1,3 +1,7 @@
+= NOTE: You probably don't want to be using this.
+
+I haven't done much with it since I started playing with it. On the other hand, there's {another Cucumber screenshot extension}[http://github.com/mocoso/cucumber-screenshot] that's much more actively maintained, so you're probably better off trying that before this.
+
 = Visible Cukes
 
 == Visible what now?
