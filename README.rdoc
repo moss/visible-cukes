@@ -27,7 +27,7 @@ Well... not really. You can totally use it, but there are a few weaknesses it's 
 * The captured screenshot pages won't link to your stylesheets correctly.
 * I'd love it if the HTML looked better than it does.
 
-That's the stuff I'm planning to change over the next couple weeks or so, but I wanted to get something out early and see if other people would find it useful.
+That's the stuff I'm planning to change over the <strike>next couple weeks</strike> year or so, but I wanted to get something out early and see if other people would find it useful.
 
 == Is there anyone you totally ripped off this idea from?
 
